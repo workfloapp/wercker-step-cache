@@ -8,7 +8,7 @@ step when the build tool "Download the whole internet"
 # Options
 
 - `action` Either "store" or "restore"
-- `directories` (optional) Space separated list of directories to cache. Default: ``$HOME/.m2 $HOME/.ivy2 $HOME/.sbt`
+- `directories` (optional) Space separated list of directories in home directory to cache. Default: `.m2 .ivy2 .sbt`
 
 # Example
 ```yaml

@@ -1,5 +1,5 @@
 name: cache
-version: 0.1.0
+version: 0.2.0
 description: Store/Restore directories between builds to cache downloading dependencies
 keywords:
   - build
@@ -12,7 +12,7 @@ properties:
   directories:
     type: string
     required: false
-    default: $HOME/.m2 $HOME/.ivy2 $HOME/.sbt
+    default: .m2 .ivy2 .sbt
   # Separator for above directories -list
   separator:
     type: string
