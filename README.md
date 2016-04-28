@@ -13,20 +13,23 @@ step when the build tool "Download the whole internet"
 # Example
 ```yaml
 build:
-    steps:
-        - sharpershape/cache:
-            action: restore
+  steps:
+    - ernoaapa/cache:
+      name: "Restore dependencies from cache"
+      action: restore
 
     # ... your steps here ...
 
-    after-steps:
-        - sharpershape/cache:
-            action: store
+    - ernoaapa/cache:
+      name: "Store dependencies to cache"
+      action: store
 ```
 # License
 The MIT License (MIT)
 
 # Changelog
+## 0.2.0
+- Fixed the script
 
 ## 0.1.0
 - Initial release
