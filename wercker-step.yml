@@ -1,0 +1,20 @@
+name: cache
+version: 0.1.0
+description: Store/Restore directories between builds to cache downloading dependencies
+keywords:
+  - build
+  - dependencies
+  - cache
+properties:
+  action: # Either "store" or "restore"
+    type: string
+    required: true
+  directories:
+    type: string
+    required: false
+    default: $HOME/.m2 $HOME/.ivy2 $HOME/.sbt
+  # Separator for above directories -list
+  separator:
+    type: string
+    required: false
+    default: " "
