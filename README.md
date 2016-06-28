@@ -14,13 +14,13 @@ step when the build tool "Download the whole internet"
 ```yaml
 build:
   steps:
-    - ernoaapa/cache:
+    - sharpershape/cache:
       name: "Restore dependencies from cache"
       action: restore
 
     # ... your steps here ...
 
-    - ernoaapa/cache:
+    - sharpershape/cache:
       name: "Store dependencies to cache"
       action: store
 ```
@@ -28,6 +28,9 @@ build:
 The MIT License (MIT)
 
 # Changelog
+## 0.3.0
+- Removed custom separator to remove bash dependency
+
 ## 0.2.0
 - Fixed the script
 
