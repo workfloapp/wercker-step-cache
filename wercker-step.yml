@@ -13,8 +13,3 @@ properties:
     type: string
     required: false
     default: .m2 .ivy2 .sbt
-  # Separator for above directories -list
-  separator:
-    type: string
-    required: false
-    default: " "
