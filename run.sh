@@ -9,12 +9,12 @@
 main() {
   case $WERCKER_CACHE_ACTION in
     "store")
-      SRC=$HOME
+      SRC=/root
       DST=$WERCKER_CACHE_DIR
       ;;
     "restore")
       SRC=$WERCKER_CACHE_DIR
-      DST=$HOME
+      DST=/root
       ;;
   esac
 
