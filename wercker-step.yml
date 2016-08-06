@@ -1,5 +1,5 @@
 name: cache
-version: 0.4.0
+version: 0.4.1
 description: Store/Restore directories between builds to cache downloading dependencies
 keywords:
   - build
