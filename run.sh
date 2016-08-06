@@ -20,10 +20,8 @@ main() {
 
   # run rsync
   for directory in $WERCKER_CACHE_DIRECTORIES; do
-    if test -d "${SRC}/${directory}"; then
-      echo "sync ${SRC}/${directory} ${DST}/"
-      rsync -avz "${SRC}/${directory}" "${DST}/"
-    fi
+    echo "sync ${SRC}/${directory} ${DST}/"
+    rsync -avz "${SRC}/${directory}" "${DST}/"
   done
 
 }
